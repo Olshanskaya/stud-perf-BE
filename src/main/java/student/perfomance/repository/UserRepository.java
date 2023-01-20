@@ -1,33 +1,7 @@
 package student.perfomance.repository;
 
-//import org.springframework.security.core.authority.SimpleGrantedAuthority;
-//import org.springframework.security.core.userdetails.UserDetails;
-//import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import student.perfomance.entitys.Users;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-@Repository
-public class UserRepository {
-//    private final static List<UserDetails> APPLICATION_USERS = Arrays.asList(
-//            new org.springframework.security.core.userdetails.User(
-//                    "admin@mail.com",
-//                    "password1",
-//                    Collections.singleton(new SimpleGrantedAuthority("ROLE_ADMIN"))
-//            ),
-//            new org.springframework.security.core.userdetails.User(
-//                    "user@mail.com",
-//                    "password2",
-//                    Collections.singleton(new SimpleGrantedAuthority("ROLE_USER"))
-//            )
-//    );
-//
-//    public UserDetails findUserDetailsByEmail(String email) {
-//        return APPLICATION_USERS.stream()
-//                .filter(u -> u.getUsername().equals(email))
-//                .findAny()
-//                .orElseThrow(() -> new UsernameNotFoundException("No user was found"));
-//    }
+public interface UserRepository extends JpaRepository<Users, Long> {
 }

@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import student.perfomance.dtos.CourseDto;
-import student.perfomance.dtos.StudentDto;
 import student.perfomance.services.CourseService;
 
 import java.util.List;
