@@ -1,0 +1,11 @@
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (1, 'firstname1', 'lastname1', 'pathronomic', 'ACTIVE', 1);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (2, 'firstname2', 'lastname2', 'pathronomic', 'ACTIVE', 1);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (3, 'firstname3', 'lastname3', 'pathronomic', 'ACTIVE', 1);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (4, 'firstname4', 'lastname4', 'pathronomic', 'ACTIVE', 1);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (5, 'firstname5', 'lastname5', 'pathronomic', 'DELETED', 1);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (6, 'firstname6', 'lastname6', 'pathronomic', 'ACTIVE', 2);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (7, 'firstname7', 'lastname7', 'pathronomic', 'ACTIVE', 2);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (8, 'firstname8', 'lastname8', 'pathronomic', 'ACTIVE', 2);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (9, 'firstname9', 'lastname9', 'pathronomic', 'ACTIVE', 2);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (10, 'firstname10', 'lastname10', 'pathronomic', 'DELETED', 2);
+insert into public.users (id, first_name, last_name, patronymic, status, academic_plan_id) values (11, 'firstname11', 'lastname11', 'pathronomic', 'ACTIVE', null);

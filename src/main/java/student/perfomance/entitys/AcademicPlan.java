@@ -24,7 +24,7 @@ public class AcademicPlan {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private ElementStatus status;
+    private String status;
 
     private String name;
 }
