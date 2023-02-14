@@ -13,17 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 import student.perfomance.dtos.StudentDto;
 
 @RestController
-@RequestMapping(value = "/student")
+@RequestMapping(value = "/admin/student")
 public class StudentController {
 
     @GetMapping
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<String> getAllUsers() {
         return ResponseEntity.ok("GetMapping all users");
     }
 
     @GetMapping("/{id}")
-//    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<String> getUserById(@PathVariable(required = true, name = "id") String id) {
         return ResponseEntity.ok("GetMapping Current student: " + id);
     }

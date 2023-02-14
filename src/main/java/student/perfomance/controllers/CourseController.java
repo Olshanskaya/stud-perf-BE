@@ -16,7 +16,7 @@ import student.perfomance.services.CourseService;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/course")
+@RequestMapping(value = "/admin/course")
 @AllArgsConstructor
 public class CourseController {
 

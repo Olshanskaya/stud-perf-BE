@@ -16,7 +16,7 @@ import student.perfomance.services.AcademicPlanService;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/plan")
+@RequestMapping(value = "/admin/plan")
 @AllArgsConstructor
 public class AcademicPlanController {
 

@@ -1,7 +1,11 @@
 package student.perfomance.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import student.perfomance.entitys.Users;
+import student.perfomance.entitys.User;
 
-public interface UserRepository extends JpaRepository<Users, Long> {
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    Optional<User> findByEmail(String email);
 }
