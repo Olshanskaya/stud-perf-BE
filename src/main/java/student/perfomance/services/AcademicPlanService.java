@@ -25,7 +25,7 @@ public class AcademicPlanService {
         return dtos;
     }
 
-    public AcademicPlanDto getAcademicPlanId(Long id) {
+    public AcademicPlanDto getAcademicPlanById(Long id) {
         return modelMapper.map(academicPlanRepository.findById(id), AcademicPlanDto.class);
     }
 

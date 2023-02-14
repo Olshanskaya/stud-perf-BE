@@ -26,8 +26,7 @@ public class StudentDto {
     private String lastName;
     private String patronymic;
     private String email;
-
-    private AcademicPlanDto academicPlanId;
+    private AcademicPlanDto academicPlan;
     //private HashMap<CourseDto, Mark> courseMarks;
     private List<CourseWithMarkDto> course;
 }

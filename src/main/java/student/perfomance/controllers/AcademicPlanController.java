@@ -29,7 +29,7 @@ public class AcademicPlanController {
 
     @GetMapping("/{id}")
     public ResponseEntity<AcademicPlanDto> getAcademicPlanById(@PathVariable(required = true, name = "id") String id) {
-        return ResponseEntity.ok(academicPlanService.getAcademicPlanId(Long.parseLong(id)));
+        return ResponseEntity.ok(academicPlanService.getAcademicPlanById(Long.parseLong(id)));
     }
 
     @PostMapping(consumes = {"application/json"})
