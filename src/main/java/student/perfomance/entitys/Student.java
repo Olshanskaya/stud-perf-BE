@@ -18,13 +18,14 @@ import lombok.Setter;
 public class Student {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String firstName;
     private String lastName;
     private String patronymic;
     private String status;
+    private String email;
 
     @ManyToOne
 //    @JoinColumn(name = "academic_plan_id")
