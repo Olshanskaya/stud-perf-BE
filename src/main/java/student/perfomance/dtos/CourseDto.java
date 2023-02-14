@@ -5,7 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import student.perfomance.entitys.AcademicPlan;
 import student.perfomance.enums.ElementStatus;
+
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -16,4 +19,5 @@ public class CourseDto {
     private Long id;
     private ElementStatus status;
     private String name;
+    //private Set<AcademicPlan> academicPlans;
 }

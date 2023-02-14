@@ -30,12 +30,12 @@ public class Course {
 
     private String status;
 
-    @ManyToMany
-//    @JoinTable(
-//            name = "academic_plans_courses",
-//            joinColumns = @JoinColumn(name = "academic_plan_id"),
-//            inverseJoinColumns = @JoinColumn(name = "couse_id"))
-    private Set<AcademicPlan> academicPlans;
+//    @ManyToMany
+////    @JoinTable(
+////            name = "academic_plans_courses",
+////            joinColumns = @JoinColumn(name = "academic_plan_id"),
+////            inverseJoinColumns = @JoinColumn(name = "couse_id"))
+//    private Set<AcademicPlan> academicPlans;
 
 
 

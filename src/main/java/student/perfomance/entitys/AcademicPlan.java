@@ -27,4 +27,10 @@ public class AcademicPlan {
     private String status;
 
     private String name;
+    @ManyToMany
+//    @JoinTable(
+//            name = "academic_plans_courses",
+//            joinColumns = @JoinColumn(name = "academic_plan_id"),
+//            inverseJoinColumns = @JoinColumn(name = "couse_id"))
+    private Set<Course> courses;
 }

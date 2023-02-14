@@ -31,6 +31,10 @@ public class CourseController {
     public ResponseEntity<CourseDto> getCourseById(@PathVariable(required = true, name = "id") String id) {
         return ResponseEntity.ok(courseService.getCourseById(Long.parseLong(id)));
     }
+//    @GetMapping("/plan/{id}")
+//    public ResponseEntity<List<CourseDto>> getCourseByAcademicPlanId(@PathVariable(required = true, name = "id") String academicPlanId) {
+//        return ResponseEntity.ok(courseService.getCourseByAcademicPlanId(Long.parseLong(academicPlanId)));
+//    }
 
     @PostMapping(consumes = {"application/json"})
     public ResponseEntity<String> createCourse(@RequestBody CourseDto courseDto) {

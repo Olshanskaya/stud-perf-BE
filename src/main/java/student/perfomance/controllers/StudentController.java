@@ -1,5 +1,6 @@
 package student.perfomance.controllers;
 
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 //import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -10,20 +11,27 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import student.perfomance.dtos.CourseDto;
 import student.perfomance.dtos.StudentDto;
+import student.perfomance.services.StudentService;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/admin/student")
+@AllArgsConstructor
 public class StudentController {
 
+    private final StudentService studentService;
+
     @GetMapping
-    public ResponseEntity<String> getAllUsers() {
-        return ResponseEntity.ok("GetMapping all users");
+    public ResponseEntity<List<StudentDto>> getAllUsers() {
+        return ResponseEntity.ok(studentService.getAllStudents());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<String> getUserById(@PathVariable(required = true, name = "id") String id) {
-        return ResponseEntity.ok("GetMapping Current student: " + id);
+    public ResponseEntity<StudentDto> getStudentById(@PathVariable(required = true, name = "id") String id) {
+        return ResponseEntity.ok(studentService.getStudentById(Long.parseLong(id)));
     }
 
     @PostMapping(consumes = {"application/json"})

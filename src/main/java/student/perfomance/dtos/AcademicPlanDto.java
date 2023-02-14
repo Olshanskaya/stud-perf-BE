@@ -19,5 +19,5 @@ public class AcademicPlanDto {
     private ElementStatus status;
 
     private String name;
-    //private Set<CourseDto> courses;
+    private Set<CourseDto> courses;
 }

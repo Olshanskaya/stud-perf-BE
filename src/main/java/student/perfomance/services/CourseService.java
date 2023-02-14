@@ -59,4 +59,12 @@ public class CourseService {
         }
         return false;
     }
+
+//    public List<CourseDto> getCourseByAcademicPlanId(long academicPlanId) {
+//        List<CourseDto> dtos = courseRepository.findAll()
+//                .stream()
+//                .map(c -> modelMapper.map(c, CourseDto.class))
+//                .toList();
+//        return dtos;
+//    }
 }
