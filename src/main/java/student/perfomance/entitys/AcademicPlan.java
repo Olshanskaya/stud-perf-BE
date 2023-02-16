@@ -21,7 +21,7 @@ import java.util.Set;
 @Setter
 public class AcademicPlan {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String status;
