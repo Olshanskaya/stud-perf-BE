@@ -34,6 +34,7 @@ public class CourseController {
         return ResponseEntity.ok(courseService.getCourseById(Long.parseLong(id)));
     }
 
+    //http://localhost:8080/admin/course
     @PostMapping(consumes = {"application/json"})
     public ResponseEntity<String> createCourse(@RequestBody CourseDto courseDto) {
         if (courseService.createCourse(courseDto)) {
