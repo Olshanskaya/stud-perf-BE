@@ -2,6 +2,7 @@ package student.perfomance.controllers;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/admin/course")
 @AllArgsConstructor
+@CrossOrigin
 public class CourseController {
 
     private final CourseService courseService;
@@ -31,10 +33,6 @@ public class CourseController {
     public ResponseEntity<CourseDto> getCourseById(@PathVariable(required = true, name = "id") String id) {
         return ResponseEntity.ok(courseService.getCourseById(Long.parseLong(id)));
     }
-//    @GetMapping("/plan/{id}")
-//    public ResponseEntity<List<CourseDto>> getCourseByAcademicPlanId(@PathVariable(required = true, name = "id") String academicPlanId) {
-//        return ResponseEntity.ok(courseService.getCourseByAcademicPlanId(Long.parseLong(academicPlanId)));
-//    }
 
     @PostMapping(consumes = {"application/json"})
     public ResponseEntity<String> createCourse(@RequestBody CourseDto courseDto) {
